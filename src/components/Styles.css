@@ -1,0 +1,68 @@
+.mainHeader {
+  display: flex;
+  width: 100%;
+  background-color: black;
+  height: 50px;
+  color: antiquewhite;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.title {
+  padding-left: 20px;
+}
+.search {
+  padding-right: 20px;
+}
+.search input {
+  height: 30px;
+  min-width: 300px;
+}
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin: 5px;
+  width: fit-content;
+  height: 100%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.cardImage {
+  padding: 15px;
+}
+.mainCard {
+  display: flex;
+  overflow-x: scroll;
+}
+.noData {
+  margin: auto;
+  display: flex;
+  font-size: 36px;
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 90vh;
+}
+
+@media only screen and (max-width: 500px) {
+  .mainHeader {
+    display: flex;
+    margin: auto;
+    padding: 0;
+    justify-content: center;
+  }
+  .title {
+    display: none;
+    padding: 0;
+  }
+  .search {
+    padding: 0;
+  }
+}
